@@ -88,7 +88,7 @@ class ToxicContentGuard {
         }, 700);
     }
 }
-
+```
 
 ## 5.2 Provider Factory
 ```JavaScript
@@ -127,3 +127,4 @@ class OpenAIProvider {
         };
     }
 }
+
