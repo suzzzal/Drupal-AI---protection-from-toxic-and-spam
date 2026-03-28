@@ -1,7 +1,7 @@
-# Technical Documentation: Real-Time AI Content Moderation Layer
+# Week 1–2: Client Layer (Input Handling + Provider Setup + AI Integration + Live Feedback UI)
 
-## 1. Project Overview
-This project aims to implement a client-side integration layer that provides real-time toxicity feedback to users as they type. By utilizing a **Debounce Engine** and a **Provider Factory**, the system minimizes unnecessary API overhead while maintaining a flexible architecture that supports multiple AI moderation services (e.g., OpenAI, Gemini, Perspective).
+## 1. Week Overview
+This week aims to implement a client-side integration layer that provides real-time toxicity feedback to users as they type. By utilizing a **Debounce Engine** and a **Provider Factory**, the system minimizes unnecessary API overhead while maintaining a flexible architecture that supports multiple AI moderation services (e.g., OpenAI, Gemini, Perspective).
 
 ---
 
@@ -46,9 +46,9 @@ The system utilizes a "Pre-submission Intervention" model. By providing an inlin
 ## 4. Flowchart Logic
 
 
-1. **User Input** -> 2. **Clear Existing Timer** -> 3. **Start 700ms Timer** -> 4. **Timer Completes?** - No (New Input): Return to step 2.
+1. |**User Input**| -> 2. |**Clear Existing Timer**| -> 3. |**Start 700ms Timer**| -> 4. |**Timer Completes?**| - No (New Input): Return to step 2.\|
    - Yes: Proceed to step 5.
-5. **Request to ProviderFactory** -> 6. **AI Analysis** -> 7. **Return Boolean/Metadata** -> 8. **Update UI Elements**.
+5. |**Request to ProviderFactory**| -> 6. |**AI Analysis**| -> 7. |**Return Boolean/Metadata**| -> 8. |**Update UI Elements**|.
 
 ---
 
